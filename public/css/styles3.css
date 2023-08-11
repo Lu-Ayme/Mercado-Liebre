@@ -1,0 +1,102 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+    width: 100vw;
+}
+
+.navbar{
+    color:#ebebeb;
+    margin: 20px
+
+}
+
+.ul1, .ul2{
+    margin: 20px;
+}
+
+.minimg{
+    width: 20px;
+    margin: 0px 5px -6px 5px;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    background-color: #03264C;
+    color: white;
+    padding: 5px;
+}
+
+body{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main{
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.caja{
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
+.caja > .camion{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+h1{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.precios{
+    font-size: 18px;
+}
+
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones{
+    font-size: 16px;
+    color: #666;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjeta, .regalo, .escudo{
+    width: 2em;
+    margin-bottom: 10px;
+} 
