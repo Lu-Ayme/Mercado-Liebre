@@ -1,0 +1,55 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.al-lado{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+section{
+    padding: 10px;
+    margin-top: 60px;
+    align-self: center;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.formularios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-left: 30px;
+}
+
+div{
+    margin-bottom: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black ;
+}
+
+button:hover{
+    background-color: #0022AA;
+    transition-duration: 1.5s;
+}

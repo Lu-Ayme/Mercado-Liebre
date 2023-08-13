@@ -7,17 +7,40 @@
 
 header{
     background-color: #EAC926;
-    width: 100vw;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+
+.logo{
+    width: 50%;
 }
 
 .navbar{
     color:#ebebeb;
-    margin: 20px
+    margin: 20px;
+    width: 50%;
+    padding-top: 15px;
+}
 
+.al-lado{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.manoyfrase{
+    margin:20px;
 }
 
 .ul1, .ul2{
-    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.uldelheader0{
+    display: flex;
+    justify-content: space-around;
 }
 
 .minimg{
@@ -32,10 +55,10 @@ header{
     background-color: #03264C;
     color: white;
     padding: 5px;
+    align-self: auto;
 }
 
 body{
-    background-color: #ebebeb;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,24 +74,31 @@ main{
     border-top: 1px solid #ebebeb;
     background-color: white;
     padding: 15px;
+    padding-bottom: 0px;
 }
 
-.caja > .camion{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    }
+.caja{
+    position:relative;
+    margin-bottom: 30px;
+}
+
+.camion{
+    position:absolute;
+    bottom: 60px;
+    right: 35px;    
+}
+
+.camion:hover{
+
+    animation: rotate 1.5s 1
+}
 
 h1{
     font-size: 24px;
+}
+
+h2{
+    margin: 10px;
 }
 
 p{
@@ -84,19 +114,156 @@ p{
     color: #39b54a;
 }
 
-.descripciones{
+article b{
+    opacity:0%
+}
+
+.descripciones b{
+    opacity:0%
+}
+
+.descripciones:hover b{
     font-size: 16px;
     color: #666;
+    animation:opacidad 3s infinite
 }
 
-footer{
+article:hover b{
+    opacity:100%;
+    animation-duration: 4s;
+}
+
+.footer1{
+    text-align: center;
+}
+
+.todoelfooter{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.tarjeta, .regalo, .escudo{
-    width: 2em;
-    margin-bottom: 10px;
-} 
+.icono{
+    font-size: 50px;
+}
+
+.icono:hover{
+    color:black
+}
+
+p{
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+
+@keyframes opacidad{
+    0%{opacity:0%}
+    100%{opacity:100%}
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotate(0)
+    }
+    50%{
+        transform:rotate(-90deg)
+    }
+    100%{
+        transform: rotate(0)
+    }
+}
+
+@media(max-width:360px){
+    .descripciones{
+        display:none
+    }
+    .uldelheader0{
+        display: none;
+    }
+    .al-lado{
+        display: flex;
+        justify-content: space-around;
+    }
+    .ul1, .ul2{
+        flex-direction: column;
+    }
+}
+
+@media (min-width:361px){
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition-duration: 1.5s;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .para2{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        }
+        .navbar{
+            margin-top: -10px;
+        }
+    article{
+        width: 40%;
+        padding-bottom: 0px;
+    }
+    .uldelheader0{
+        display: flex;
+        justify-content: space-around;
+    }
+    .ul1, .ul2{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:361px){
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        transition-duration: 1.5s;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .para2{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        }
+        .navbar{
+            margin-top: -10px;
+        }
+    article{
+        width: 40%;
+    }
+    .al-lado{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+
+@media (min-width=769px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }    
+    section{
+        display: flex;
+        justify-content: space-around
+    }
+    .navbar{
+        text-align: center;
+    }
+    .al-lado{
+        width: 60%;
+    }
+    .al-lado2{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+    }
+    article{
+        width: 10%;
+    }
+}
