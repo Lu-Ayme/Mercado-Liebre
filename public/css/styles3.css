@@ -8,19 +8,19 @@
 header{
     background-color: #EAC926;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 
 .logo{
     width: 50%;
+    margin-right: 30px;
 }
 
 .navbar{
     color:#ebebeb;
-    margin: 20px;
+    margin-top: 30px;
     width: 50%;
-    padding-top: 15px;
 }
 
 .al-lado{
@@ -35,7 +35,11 @@ header{
 
 .ul1, .ul2{
     display: flex;
-    justify-content: flex-end;
+}
+
+.ul1 li, .ul2 li{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .uldelheader0{
@@ -66,6 +70,9 @@ body{
 }
 
 main{
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
     width: 90%;
     margin-bottom: 15px;
 }
@@ -84,12 +91,11 @@ main{
 
 .camion{
     position:absolute;
-    bottom: 60px;
-    right: 35px;    
+    bottom: 40px;
+    right: 30px;    
 }
 
-.camion:hover{
-
+.camion:hover {
     animation: rotate 1.5s 1
 }
 
@@ -107,11 +113,17 @@ p{
 
 .precios{
     font-size: 18px;
+    width: 30%;
 }
 
 .descuentos{
     font-size: 16px;
     color: #39b54a;
+    width: 70%;
+}
+
+article{
+    margin-bottom: 10px;
 }
 
 article b{
@@ -119,7 +131,8 @@ article b{
 }
 
 .descripciones b{
-    opacity:0%
+    opacity:0%;
+
 }
 
 .descripciones:hover b{
@@ -128,13 +141,13 @@ article b{
     animation:opacidad 3s infinite
 }
 
+.ponerjuntos{
+    display: flex;
+}
+
 article:hover b{
     opacity:100%;
     animation-duration: 4s;
-}
-
-.footer1{
-    text-align: center;
 }
 
 .todoelfooter{
@@ -142,17 +155,27 @@ article:hover b{
     justify-content: space-around;
 }
 
+.footer1{
+    text-align: center;
+}
+
 .icono{
-    font-size: 50px;
+    font-size: 2em;
 }
 
 .icono:hover{
-    color:black
+    animation:color 1s 1;
+    font-size: 60px;
 }
 
 p{
     margin-top: 2px;
     margin-bottom: 15px;
+}
+
+@keyframes color{
+    0%{color:#1259c3}
+    100%{color:#EAC926}
 }
 
 @keyframes opacidad{
@@ -173,59 +196,34 @@ p{
 }
 
 @media(max-width:360px){
-    .descripciones{
+    .minimg{
         display:none
-    }
-    .uldelheader0{
-        display: none;
-    }
-    .al-lado{
-        display: flex;
-        justify-content: space-around;
     }
     .ul1, .ul2{
         flex-direction: column;
     }
+    .navbar{
+        margin-top: -10px;
+    }
 }
 
 @media (min-width:361px){
-    article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        transition-duration: 1.5s;
-    }
     .burger-menu{
         display:none;
+    }        
+    .logo{
+            width: 190px;
+            margin-left: 15px;
     }
-    .para2{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        }
-        .navbar{
-            margin-top: -10px;
-        }
     article{
         width: 40%;
         padding-bottom: 0px;
     }
-    .uldelheader0{
-        display: flex;
-        justify-content: space-around;
-    }
-    .ul1, .ul2{
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media (min-width:361px){
     article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         transition-duration: 1.5s;
     }
-    .burger-menu{
-        display:none;
-    }
+
     .para2{
         display: flex;
         justify-content: space-between;
@@ -234,18 +232,28 @@ p{
         .navbar{
             margin-top: -10px;
         }
-    article{
-        width: 40%;
+}
+
+@media(max-width:414){
+    .navbar{
+        width: 200px;
     }
-    .al-lado{
+    .al-lado2{
         display: flex;
+        justify-content: space-around;
+
+    }
+}
+
+@media (max-width:530px){
+    .ul1, .ul2{
+        flex-direction: column;
         justify-content: space-around;
     }
 }
 
-
 @media (min-width=769px){
-    article{
+    article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }    
     section{
@@ -255,15 +263,13 @@ p{
     .navbar{
         text-align: center;
     }
-    .al-lado{
-        width: 60%;
+    article{
+        width: 170px;
+        height: 200px
     }
-    .al-lado2{
-        width: 40%;
+    .para4{
         display: flex;
         justify-content: space-around;
-    }
-    article{
-        width: 10%;
+        align-items: center;
     }
 }
