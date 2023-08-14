@@ -9,9 +9,16 @@ header{
     background-color: #EAC926;
 }
 
+.logobotón{
+    background-color: #EAC926;
+    border: #EAC926;
+    margin: #EAC926;
+    padding: #EAC926;
+}
+
 .al-lado{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -72,26 +79,57 @@ a{
     100%{color:#EAC926}
 }
 
-@media(max-width:360px){
-    .al-lado{
-        display: flex;
-        justify-content: space-around;
-    }
-}
-
-    .al-lado{
-        display: flex;
-        justify-content: space-around;
-    }
-
-
-@media (min-width=769px){
-    .al-lado{
+@media (max-width:769px){
+        .al-lado{
         width: 60%;
     }
     .al-lado2{
-        width: 40%;
+       display: flex;
+        justify-content: space-between;
+        text-align: center;
+        }
+
+    section{
+         margin-top: 50px;
+    margin-bottom: 100px;  
+    }
+    .manoyfrase{
+        margin-top: 20px;
+    }
+    .logo{
+        width: 150px;
+    height: 80px;
+    
+    }
+    .minimg{
+        position: relative;
+        top:10px;
+        margin-right: 2px;
+    }
+}
+
+
+@media(max-width:460px){
+    .al-lado{
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+    }
+    .al-lado2{
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        width: 200px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+    }
+    .logo{
+        width:90%;
+        justify-content: center;
+        position:relative;
+        right: 10px;
+    }
+    .manoyfrase{
+        margin-top: 0px;
     }
 }

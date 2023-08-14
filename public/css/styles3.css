@@ -13,24 +13,46 @@ header{
 
 
 .logo{
-    width: 50%;
-    margin-right: 30px;
+    width: 150px;
+    height: 80px;
+    
 }
 
 .navbar{
     color:#ebebeb;
-    margin-top: 30px;
-    width: 50%;
+}
+
+.formdelusuario{
+    padding: 10px;
+    
+}
+
+.fa-search{
+    position: relative;
+    top:0px;
+    right:10px
 }
 
 .al-lado{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+article{
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 .manoyfrase{
-    margin:20px;
+    margin-top: -10px;
+}
+
+.manos{
+    position: relative;
+    top:8px;
+    right: 5px;
 }
 
 .ul1, .ul2{
@@ -53,7 +75,7 @@ header{
 }
 
 .burger-menu{
-    display: flex;
+    display: none;
     justify-content: center;
     margin: 15px;
     background-color: #03264C;
@@ -71,10 +93,19 @@ body{
 
 main{
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
     width: 90%;
     margin-bottom: 15px;
+}
+
+.artículo{
+    margin-bottom: 10px;
+
+}
+
+.para4{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: 0;
 }
 
 .caja{
@@ -119,14 +150,20 @@ p{
 .descuentos{
     font-size: 16px;
     color: #39b54a;
-    width: 70%;
+    margin-top: 2px;
 }
 
-article{
-    margin-bottom: 10px;
+.Img-Produpto{
+    width: 250px;
+    height: 250px;
 }
 
-article b{
+.artículo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition-duration: 1.5s;
+}
+
+.artículo b{
     opacity:0%
 }
 
@@ -143,9 +180,11 @@ article b{
 
 .ponerjuntos{
     display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-article:hover b{
+.artículo:hover b{
     opacity:100%;
     animation-duration: 4s;
 }
@@ -195,81 +234,75 @@ p{
     }
 }
 
-@media(max-width:360px){
-    .minimg{
-        display:none
-    }
-    .ul1, .ul2{
-        flex-direction: column;
-    }
-    .navbar{
-        margin-top: -10px;
-    }
-}
 
-@media (min-width:361px){
-    .burger-menu{
-        display:none;
-    }        
-    .logo{
-            width: 190px;
-            margin-left: 15px;
-    }
-    article{
-        width: 40%;
-        padding-bottom: 0px;
-    }
-    article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        transition-duration: 1.5s;
-    }
 
-    .para2{
-        display: flex;
-        justify-content: space-between;
+
+
+@media (max-width:769px){
+    .para4{
+    flex-direction: column;
+    }
+    .Img-Produpto{
+        width: 400px;
+        height: 450px;
+    }
+    .artículo{
         text-align: center;
-        }
-        .navbar{
-            margin-top: -10px;
-        }
+        align-items: center;        
+    }
+    .ponerjuntos{
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+    }
+    .camion{
+        right: 150px;    
+        width: 50px;
+        height: 50px;
+    }
 }
 
-@media(max-width:414){
+
+
+@media(max-width:460px){
     .navbar{
         width: 200px;
+        margin-top: 0px;
+        margin-bottom: 25px;
     }
-    .al-lado2{
+    .logo{
+        width:50%;
+        justify-content: center;
+    }
+    .uldelheader0{
+        display: none;
+    }
+    .al-lado{
         display: flex;
-        justify-content: space-around;
-
-    }
-}
-
-@media (max-width:530px){
-    .ul1, .ul2{
         flex-direction: column;
-        justify-content: space-around;
+    }
+    .fa-search{
+        position: relative;
+        top: 30px;
+        right: 35px;
+    }
+    .Img-Produpto {
+        width: 250px;
+        height: 300px;
+    }
+    .camion{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        right:-125px;
+        bottom:30px
+    }
+    .burger-menu{
+        display: flex;
     }
 }
 
-@media (min-width=769px){
-    article:hover{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }    
-    section{
-        display: flex;
-        justify-content: space-around
-    }
-    .navbar{
-        text-align: center;
-    }
-    article{
-        width: 170px;
-        height: 200px
-    }
-    .para4{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
+
+
+
+
